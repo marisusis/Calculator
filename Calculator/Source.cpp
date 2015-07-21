@@ -4,6 +4,7 @@
 using namespace std;
 
 int getFirstNumber();
+int getSecondNumber();
 
 int main() {
 	
@@ -31,3 +32,10 @@ int getFirstNumber() {
 	return num1;
 }
 
+int getSecondNumber() {
+	int num2;
+	cout << "Enter second number: ";
+	cin >> num2;
+	cout << endl;
+	return num2;
+}
