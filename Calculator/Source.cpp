@@ -4,7 +4,7 @@
 using namespace std;
 
 int getFirstNumber();
-int getSecondNumber();
+int getSecondNumber()
 
 int main() {
 	
@@ -15,8 +15,9 @@ int main() {
 	cout << "Enter first number: ";
 	cin >> num1;
 	cout << endl;*/
+	cout << getFirstNumber();
 
-	getFirstNumber();
+
 
 	//TODO add in exception catching
 	
@@ -38,4 +39,12 @@ int getSecondNumber() {
 	cin >> num2;
 	cout << endl;
 	return num2;
+}
+
+char getOperator() {
+	char operation;
+	cout << "Enter operator: ";
+	cin >> operation;
+	cout << endl;
+	return operation;
 }
