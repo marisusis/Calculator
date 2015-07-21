@@ -16,20 +16,32 @@ int nadd();
 int nsubtract();
 
 int main() {
-	getFirstNumber();
-	getOperator();
-	getSecondNumber();
+		char cont;
+		bool calc = true;
+	while (calc){
+		getFirstNumber();
+		getOperator();
+		getSecondNumber();
 
-	cout << num1 << " " << operation << " " << num2 << endl;
-	//cout << num1 << operation << num2 << endl;
-	if (operation = '+') {
-		nadd();
-	} else if (operation == '-') {
-		nsubtract();
-	} else if (operation == '/') {
-		ndivide();
-	} else if (operation == '*') {
-		nmultiply();
+		cout << num1 << " " << operation << " " << num2 << endl;
+		//cout << num1 << operation << num2 << endl;
+		if (operation = '+') {
+			nadd();
+		} else if (operation == '-') {
+			nsubtract();
+		} else if (operation == '/') {
+			ndivide();
+		} else if (operation == '*') {
+			nmultiply();
+		} 
+		cout << "Would you like to calculate another equation? (y/n): ";
+		cin >> cont;
+		if (cont == 'y') {
+
+		} else {
+			calc = false;
+			break;
+		}
 	}
 
 
