@@ -36,6 +36,7 @@ int main() {
 		} 
 		cout << "Would you like to calculate another equation? (y/n): ";
 		cin >> cont;
+		cout << endl;
 		if (cont == 'y') {
 
 		} else {
