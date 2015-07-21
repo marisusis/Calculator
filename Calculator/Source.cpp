@@ -4,18 +4,15 @@
 using namespace std;
 
 int getFirstNumber();
-int getSecondNumber()
-
+int getSecondNumber();
+char getOperator();
+char operation;
+int num1;
+int num2;
 int main() {
 	
-	/*int num1; //First number
-	int num2; //Second number
-	char operation; //Operator
-	
-	cout << "Enter first number: ";
-	cin >> num1;
-	cout << endl;*/
-	cout << getFirstNumber();
+	cout << getFirstNumber() << " " << getOperator() << " " << getSecondNumber() << endl;
+	cout << num1 << operation << num2 << endl;
 
 
 
@@ -26,25 +23,28 @@ int main() {
 }
 
 int getFirstNumber() {
-	int num1;
+	int num;
 	cout << "Enter first number: ";
-	cin >> num1;
+	cin >> num;
 	cout << endl;
-	return num1;
+	num1 = num;
+	return num;
 }
 
 int getSecondNumber() {
-	int num2;
+	int num;
 	cout << "Enter second number: ";
-	cin >> num2;
+	cin >> num;
 	cout << endl;
-	return num2;
+	num2 = num;
+	return num;
 }
 
 char getOperator() {
-	char operation;
+	char opr;
 	cout << "Enter operator: ";
-	cin >> operation;
+	cin >> opr;
 	cout << endl;
-	return operation;
+	operation = opr;
+	return opr;
 }
